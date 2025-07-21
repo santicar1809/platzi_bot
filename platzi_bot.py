@@ -30,7 +30,7 @@ async def handle_message(data):
     ingles y liderazgo llamada Platzi
     """
         response = openai.chat.completions.create(
-            model='ft:gpt-4.1-nano-2025-04-14:personal::BuVl0V67',
+            model=OPENAI_MODEL,
             messages = [
             {"role":"system", "content":f'{system}'},
             {"role":"user", "content":f'{text}'}],
